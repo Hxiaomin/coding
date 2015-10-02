@@ -1,1 +1,199 @@
-Tab.html                                                           
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>榜单型tab</title>
+	<style type="text/css">
+	*{ margin:0; padding:0;}
+	body{font:12px/1.125 Arial,Helvetica,sans-serif;background:#fff;}
+	li{list-style:none;}
+	a{text-decoration: none;}
+	.none{display: none;}
+	#container{ width:250px;margin: 0 auto; position:relative;}
+	.mp-box{border:1px solid #ccc;border-bottom:0;zoom:1}
+	.mp-box-head{position:relative;padding:7px 13px 7px 8px;height:24px;line-height:24px;background:#f1f1f1;zoom:1}
+	.mp-box-head{border-bottom:1px solid #ccc}
+	.mp-box-head{padding:0;height:37px;line-height:37px;font-size:15px}
+	.mp-box-head .line{position:absolute;top:0;left:50%;width:1px;height:100%;background:#dcdcdc}
+	.mp-box-head .active{margin-top:-1px;border-top:2px solid #ff7a01;background:#fff;color:#333}
+	.mp-box-head .active strong{color:#ff7a01}
+	.mp-box-head-tab{_position:relative;float:left;width:50%;color:#999;text-align:center}
+	.mp-box-head-tab strong{font-weight:400}
+	.list-item{position:relative;padding:7px 0;border-bottom:1px solid #dcdcdc;vertical-align:middle}
+	.number{position:absolute;top:8px;left:8px;display:block;width:22px;height:22px;line-height:22px;background:#bdbdbd;text-align:center;color:#fff}
+	.brief{padding-left:40px}
+	.brief .name{height:22px;line-height:22px;font-size:14px}
+	.detail{position:relative;display:none;margin:10px 0 0 8px}
+	.name{height:17px;line-height:17px;font-size:13px;color:#333}
+	.list-item-0 .number,.list-item-1 .number{background:#d08846}
+	.list-item-2 .number{background:#997c61}
+	.item-hover .number{background:#ff7a01}
+	.item-hover .detail{display:block}
+	.detail{text-align: center;}
+	</style>
+</head>
+<body>
+<div id="container" class="mp-box">
+	<div class="mp-box-head">
+		<h3 class="mp-box-head-tab active"><strong>TAB1</strong></h3>
+		<h3 class="mp-box-head-tab"><strong>TAB2</strong></h3>
+		<div class="line"></div>
+	</div>
+	<div class="mp-list-wrap" id="tab1">
+		<div class="mp-list-wrap">
+			<ul class="mp-list">
+				<li class="list-item list-item-0 item-hover">
+					<div class="brief">
+						<span class="number">1</span>
+						 <a title="第一名" class="name" target="_blank" href="#">第一名</a>
+					</div>
+					<div class="detail">
+						<p>这是列表1第一名</p>
+					</div>
+				</li>
+					<li class="list-item list-item-1">
+					<div class="brief">
+						<span class="number">2</span>
+						 <a title="第二名" class="name" target="_blank" href="#">第二名</a>
+					</div>
+					<div class="detail">
+						<p>这是列表1第二名</p>
+					</div>
+				</li>
+					<li class="list-item list-item-2">
+					<div class="brief">
+						<span class="number">3</span>
+						 <a title="第三名" class="name" target="_blank" href="#">第三名</a>
+					</div>
+					<div class="detail">
+						<p>这是列表1第三名</p>
+					</div>
+				</li>
+					<li class="list-item">
+					<div class="brief">
+						<span class="number">4</span>
+						 <a title="第四名" class="name" target="_blank" href="#">第四名</a>
+					</div>
+					<div class="detail">
+						<p>这是列表1第四名</p>
+					</div>
+				</li>
+					<li class="list-item">
+					<div class="brief">
+						<span class="number">5</span>
+						 <a title="第五名" class="name" target="_blank" href="#">第五名</a>
+					</div>
+					<div class="detail">
+						<p>这是列表1第五名</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+		<div class="mp-list-wrap " id="tab2">
+		<div class="mp-list-wrap">
+			<ul class="mp-list none">
+				<li class="list-item list-item-0 item-hover">
+					<div class="brief">
+						<span class="number">1</span>
+						 <a title="第一名" class="name" target="_blank" href="#">第一名</a>
+					</div>
+					<div class="detail">
+						<p>这是列表2第一名</p>
+					</div>
+				</li>
+					<li class="list-item list-item-1">
+					<div class="brief">
+						<span class="number">2</span>
+						 <a title="第二名" class="name" target="_blank" href="#">第二名</a>
+					</div>
+					<div class="detail">
+						<p>这是列表2第二名</p>
+					</div>
+				</li>
+					<li class="list-item list-item-2">
+					<div class="brief">
+						<span class="number">3</span>
+						 <a title="第三名" class="name" target="_blank" href="#">第三名</a>
+					</div>
+					<div class="detail">
+						<p>这是列表2第三名</p>
+					</div>
+				</li>
+					<li class="list-item">
+					<div class="brief">
+						<span class="number">4</span>
+						 <a title="第四名" class="name" target="_blank" href="#">第四名</a>
+					</div>
+					<div class="detail">
+						<p>这是列表2第四名</p>
+					</div>
+				</li>
+					<li class="list-item">
+					<div class="brief">
+						<span class="number">5</span>
+						 <a title="第五名" class="name" target="_blank" href="#">第五名</a>
+					</div>
+					<div class="detail">
+						<p>这是列表2第五名</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	(function(){
+		var box=document.getElementById('container');
+		var tab=box.getElementsByTagName('h3');
+		var ul=box.getElementsByTagName('ul');
+		var li=null;
+		for(var i=0;i<tab.length;i++){
+			hover(ul[i]);
+			tab[i].index=i;
+			tab[i].onmouseover=function(){
+				for(i=0;i<tab.length;i++){
+					ul[i].style.display ='none';
+					removeClass(tab[i],'active');
+				}
+				ul[this.index].style.display = 'block';
+				addClass(this,'active');
+				console.log(4);
+			}
+			tab[i].onmouseout=function(){
+			}
+		}
+		//鼠标悬浮在ul上
+     function hover(ul){
+            var li = ul.getElementsByTagName('li');
+            for(var j = 0; j < li.length; j++){
+                li[j].onmouseover = function(){
+                    for( j = 0; j < li.length; j++){
+                        removeClass(li[j], 'item-hover');
+                    }
+                    addClass(this, 'item-hover');
+                }
+            }
+        }
+		//是否有这个class值
+        function hasClass(obj, cls){
+            return obj.className.match(new RegExp('(\\s+|^)' + cls + '(\\s+|$)'));
+        }
+        //增加class
+        function addClass(obj, cls){
+            if(!hasClass(obj, cls)){
+                obj.className += ' ' + cls;
+            }
+        }
+		//移除class
+	    function removeClass(obj, cls){
+            var reg = new RegExp('(\\s+|^)' + cls + '(\\s+|$)');
+            if(hasClass(obj, cls)){
+                obj.className = obj.className.replace(reg, '');
+            }
+        }
+
+	}());
+</script>	
+</body>
+</html>
